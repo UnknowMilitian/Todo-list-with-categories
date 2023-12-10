@@ -14,14 +14,17 @@ window.addEventListener("load", () => {
   newTodoForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const todo = {
-      content: e.target.elements.content.value,
-      category: e.target.elements.category.value,
-      done: false,
-      createdAt: new Date().getTime(),
-    };
-
-    todos.push(todo);
+    if (!e.target.elements.content.value || !e.target.elements.category.value) {
+      alert("Please Input something to inputs and chose the category !");
+    } else {
+      const todo = {
+        content: e.target.elements.content.value,
+        category: e.target.elements.category.value,
+        done: false,
+        createdAt: new Date().getTime(),
+      };
+      todos.push(todo);
+    }
 
     localStorage.setItem("todos", JSON.stringify(todos));
 
