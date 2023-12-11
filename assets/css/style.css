@@ -13,6 +13,11 @@
   --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +40,7 @@ body {
 }
 
 section {
-  margin: 2rem 1.5rem 2rem 1.5rem;
+  margin: 2rem 25% 2rem 25%;
 }
 
 h3 {
@@ -66,7 +71,7 @@ h4 {
 .greeting .title input {
   color: var(--dark);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .create-todo input[type="text"] {

@@ -1,0 +1,23 @@
+@media only screen and (max-width: 800px) {
+  section {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .todo-list .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .todo-item .todo-content {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .todo-item .todo-content input {
+    font-size: 1rem;
+  }
+}
